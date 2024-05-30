@@ -1,6 +1,7 @@
 import {Suspense} from 'react';
 import {defer, redirect} from '@shopify/remix-oxygen';
 import {Await, Link, useLoaderData} from '@remix-run/react';
+import { parseGid } from '@shopify/hydrogen-react';
 import {
   Image,
   Money,
@@ -208,6 +209,7 @@ function ProductPrice({selectedVariant}) {
  * }}
  */
 function ProductForm({product, selectedVariant, variants}) {
+  const { id } = parseGid(product.id);
   return (
     <div className="product-form">
       <VariantSelector
