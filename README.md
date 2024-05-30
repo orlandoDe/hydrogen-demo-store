@@ -98,7 +98,7 @@ you will have 2 folders, one is for the frontend and the other is for the backen
    ```sh
    cd hydrogen-demo-store/hydrogen-quickstart/ && npm install
    ```
-after finish go back to hydrogen-quickstart folder and run the install
+after finish go back to microservice folder and run the install
 - npm
    ```sh
    cd ../microservice/ && npm install
