@@ -18,8 +18,8 @@ This is a demo e-commerce site built using Shopify Hydrogen. Users can mark prod
 </div>
 
  ## About The Project
-
-![work video](https://depablosm.com/wp-content/uploads/2024/05/shotVideo.gif)
+ 
+![work video](https://github.com/orlandoDe/hydrogen-demo-store/assets/141243932/fb82f1b7-a94a-4e99-bd3a-62495b67af41)
 
 The task was to build a demo e-commerce site using Shopify Hydrogen that allows users to
 mark products as their favorites. These favorites will be managed by a Node.js
