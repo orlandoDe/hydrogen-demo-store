@@ -75,11 +75,24 @@ export async function loader({context}) {
     },
   });
 
+  // Modify the menu data to include the new "Favorites" link
+  const headerData = await headerPromise;
+  if (headerData.menu && headerData.menu.items) {
+    headerData.menu.items.push({
+      id: 'favorites-menu-item',
+      resourceId: null,
+      tags: [],
+      title: 'Favorites',
+      type: 'LINK',
+      url: '/favorites',
+    });
+  }
+
   return defer(
     {
       cart: cartPromise,
       footer: footerPromise,
-      header: await headerPromise,
+      header: headerData,
       isLoggedIn: isLoggedInPromise,
       publicStoreDomain,
     },

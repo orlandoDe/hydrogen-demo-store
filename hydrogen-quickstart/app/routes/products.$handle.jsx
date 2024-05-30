@@ -9,6 +9,7 @@ import {
   CartForm,
 } from '@shopify/hydrogen';
 import {getVariantUrl} from '~/lib/variants';
+import { FavoriteBtn } from '~/components/FavoriteBtn';
 
 /**
  * @type {MetaFunction<typeof loader>}
@@ -235,6 +236,9 @@ function ProductForm({product, selectedVariant, variants}) {
       >
         {selectedVariant?.availableForSale ? 'Add to cart' : 'Sold out'}
       </AddToCartButton>
+      <br />
+      {/* Adding custom btn component */}
+      <FavoriteBtn productId={id} productObj={product}></FavoriteBtn>
     </div>
   );
 }
