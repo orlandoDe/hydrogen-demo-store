@@ -5,6 +5,7 @@
   "version": "2024.4.4",
   "type": "module",
   "scripts": {
+    "test": "vitest",
     "build": "shopify hydrogen build --codegen",
     "dev": "shopify hydrogen dev --codegen",
     "preview": "npm run build && shopify hydrogen preview",
@@ -23,9 +24,13 @@
     "graphql-tag": "^2.12.6",
     "isbot": "^3.8.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "util": "^0.12.5"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.24.6",
+    "@babel/preset-react": "^7.24.6",
+    "@babel/register": "^7.24.6",
     "@graphql-codegen/cli": "5.0.2",
     "@remix-run/dev": "^2.8.0",
     "@remix-run/eslint-config": "^2.8.0",
@@ -33,16 +38,30 @@
     "@shopify/mini-oxygen": "^3.0.2",
     "@shopify/oxygen-workers-types": "^4.0.0",
     "@shopify/prettier-config": "^1.1.2",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.7",
     "@total-typescript/ts-reset": "^0.4.2",
     "@types/eslint": "^8.4.10",
     "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.3.0",
+    "axios": "^1.7.2",
+    "babel-jest": "^29.7.0",
+    "chai": "^5.1.1",
     "eslint": "^8.20.0",
     "eslint-plugin-hydrogen": "0.12.2",
+    "ignore-styles": "^5.0.1",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^24.1.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^10.4.0",
     "prettier": "^2.8.4",
-    "typescript": "^5.2.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
     "vite": "^5.1.0",
-    "vite-tsconfig-paths": "^4.3.1"
+    "vite-tsconfig-paths": "^4.3.1",
+    "vitest": "^1.6.0"
   },
   "engines": {
     "node": ">=18.0.0"
